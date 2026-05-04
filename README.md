@@ -115,7 +115,9 @@ Standard package path:
 clients/{client-slug}/{workflow-slug}/
 ```
 
-Example:
+Each skill writes its own phase file into that package folder.
+
+The full package eventually looks like this after the method has run:
 
 ```text
 clients/acme-agency/discovery-call-to-proposal/
@@ -131,13 +133,18 @@ Skill behavior:
 
 ```text
 /map-workflow
--> interviews, scores, creates/updates 01-work-map.md
+-> interviews, scores, creates/updates:
+   clients/{client-slug}/{workflow-slug}/01-work-map.md
 
 /build-system
--> reads 01-work-map.md, creates/updates 02-system-blueprint.md
+-> reads 01-work-map.md, creates/updates:
+   clients/{client-slug}/{workflow-slug}/02-system-blueprint.md
 
 /run-review
--> reads prior files, creates/updates 03-workflow-playbook.md and live-system-records/
+-> reads prior files, creates/updates:
+   clients/{client-slug}/{workflow-slug}/03-workflow-playbook.md
+   clients/{client-slug}/{workflow-slug}/live-system-records/feedback-scorecard.md
+   clients/{client-slug}/{workflow-slug}/live-system-records/review-notes.md
 ```
 
 For Shipyard's own internal workflows, use:
