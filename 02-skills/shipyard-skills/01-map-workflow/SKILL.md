@@ -14,7 +14,7 @@ Purpose:
 Output:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/01-work-map.md
+01-workspace/{business-slug}/{workflow-slug}/01-work-map.md
 ```
 
 ## When To Use
@@ -32,11 +32,12 @@ Use when the user says things like:
 
 Read available context from:
 
-- `workspace/00-intake.md`
-- `workspace/_template-work-system/01-work-map.md`
-- `workspace/HOW-IT-WORKS.md`
-- existing packages under `workspace/`
-- `connectors/connected-tools.md` when tools matter
+- `01-workspace/00-intake.md`
+- `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/_template-work-system/01-work-map.md`
+- `01-workspace/HOW-IT-WORKS.md`
+- existing packages under `01-workspace/`
+- `03-connectors/connected-tools.md` when tools matter
 
 If context is missing, interview the user. Ask only the minimum questions needed to create a useful Work Map.
 
@@ -47,13 +48,13 @@ Do not only explain the framework. Interview, reason, create the package folder,
 Use this standard path:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/01-work-map.md
+01-workspace/{business-slug}/{workflow-slug}/01-work-map.md
 ```
 
 Create this folder if needed:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/live-system-records/
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/
 ```
 
 Also create blank live record files if missing:
@@ -69,7 +70,7 @@ memory-updates.md
 If the user is mapping their own business and no business name is given, use:
 
 ```text
-workspace/your-business/{workflow-slug}/
+01-workspace/your-business/{workflow-slug}/
 ```
 
 Slug rules:

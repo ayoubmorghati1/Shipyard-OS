@@ -11,15 +11,15 @@ It is platform-agnostic. The live system can run through Claude, ChatGPT, Gemini
 Open:
 
 ```text
-workspace/START-HERE.md
+01-workspace/START-HERE.md
 ```
 
 Then use:
 
 ```text
-workspace/00-intake.md
-workspace/_template-work-system/
-skills/shipyard-skills/
+01-workspace/00-intake.md
+01-workspace/_template-work-system/
+02-skills/shipyard-skills/
 ```
 
 ## The Simple Model
@@ -39,7 +39,7 @@ Map -> Build -> Run
 Every workflow gets one package:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/
+01-workspace/{business-slug}/{workflow-slug}/
 |--- 01-work-map.md
 |--- 02-system-blueprint.md
 |--- 03-workflow-playbook.md
@@ -66,7 +66,7 @@ Live System Records = what actually happened
 Shipyard-OS/
 |--- README.md
 |--- AGENTS.md
-|--- workspace/
+|--- 01-workspace/
 |   |--- START-HERE.md
 |   |--- 00-intake.md
 |   |--- HOW-IT-WORKS.md
@@ -74,12 +74,12 @@ Shipyard-OS/
 |   |--- _template-work-system/
 |   |--- _example-work-system/
 |   `--- your-business/
-|--- skills/
+|--- 02-skills/
 |   |--- shipyard-skills/
 |   |--- skill-creator/
 |   `--- user-created/
-|--- connectors/
-|--- adapters/
+|--- 03-connectors/
+|--- 04-adapters/
 `--- .gitignore
 ```
 
@@ -88,7 +88,13 @@ Shipyard-OS/
 Everything the agent builds for a business goes under:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/
+01-workspace/{business-slug}/{workflow-slug}/
+```
+
+The living business-level agent brief goes one level above the workflows:
+
+```text
+01-workspace/{business-slug}/AGENTS.md
 ```
 
 The connector apps may hold the live work, for example a Google Doc, ClickUp list, CRM record, Slack workflow, or Claude Project. The repo still records where those things live in:
@@ -102,7 +108,7 @@ live-system-records/live-interface.md
 Official Shipyard skills live here:
 
 ```text
-skills/shipyard-skills/
+02-skills/shipyard-skills/
 |--- 01-map-workflow/
 |--- 02-build-system/
 `--- 03-run-review/
@@ -111,10 +117,10 @@ skills/shipyard-skills/
 User-created reusable skills live here:
 
 ```text
-skills/user-created/
+02-skills/user-created/
 ```
 
-Use `skills/skill-creator/` when you want the agent to turn a repeated task into a reusable skill.
+Use `02-skills/skill-creator/` when you want the agent to turn a repeated task into a reusable skill.
 
 ## Completion Standard
 

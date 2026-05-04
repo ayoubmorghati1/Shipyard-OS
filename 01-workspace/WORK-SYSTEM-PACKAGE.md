@@ -7,7 +7,7 @@ It is the thing you build, teach, hand off, run, and improve.
 ## Standard Folder
 
 ```text
-workspace/{business-slug}/{workflow-slug}/
+01-workspace/{business-slug}/{workflow-slug}/
 |--- 01-work-map.md
 |--- 02-system-blueprint.md
 |--- 03-workflow-playbook.md

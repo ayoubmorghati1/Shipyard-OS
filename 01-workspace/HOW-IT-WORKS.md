@@ -86,7 +86,7 @@ Connectors are global because the business has one tool environment.
 Record available tools here:
 
 ```text
-connectors/connected-tools.md
+03-connectors/connected-tools.md
 ```
 
 Then each Work System decides which connected tools it actually uses.
@@ -98,11 +98,11 @@ User-created skills are reusable across Work Systems.
 Store them here:
 
 ```text
-skills/user-created/
+02-skills/user-created/
 ```
 
 If a workflow needs a new reusable skill, use:
 
 ```text
-skills/skill-creator/
+02-skills/skill-creator/
 ```

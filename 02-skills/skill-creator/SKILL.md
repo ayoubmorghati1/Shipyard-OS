@@ -10,7 +10,7 @@ Use this skill to create reusable skills for Shipyard-OS.
 Output location:
 
 ```text
-skills/user-created/{skill-slug}/SKILL.md
+02-skills/user-created/{skill-slug}/SKILL.md
 ```
 
 ## When To Use

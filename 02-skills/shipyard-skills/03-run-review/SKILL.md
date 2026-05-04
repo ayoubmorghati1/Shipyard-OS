@@ -14,8 +14,8 @@ Purpose:
 Outputs:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/03-workflow-playbook.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/
+01-workspace/{business-slug}/{workflow-slug}/03-workflow-playbook.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/
 ```
 
 ## When To Use
@@ -33,9 +33,10 @@ Use when the user says things like:
 
 Read available context from:
 
-- `workspace/{business-slug}/{workflow-slug}/01-work-map.md`
-- `workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md`
-- `workspace/_template-work-system/03-workflow-playbook.md`
+- `01-workspace/{business-slug}/{workflow-slug}/01-work-map.md`
+- `01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md`
+- `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/_template-work-system/03-workflow-playbook.md`
 - existing files under `live-system-records/`
 - relevant live outputs or feedback records
 
@@ -48,25 +49,25 @@ Do not only answer in chat. Read prior package files, interview for missing oper
 Read:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/01-work-map.md
-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
+01-workspace/{business-slug}/{workflow-slug}/01-work-map.md
+01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
 ```
 
 Write or update:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/03-workflow-playbook.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/live-interface.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/feedback-scorecard.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/review-notes.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/approved-outputs.md
-workspace/{business-slug}/{workflow-slug}/live-system-records/memory-updates.md
+01-workspace/{business-slug}/{workflow-slug}/03-workflow-playbook.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/live-interface.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/feedback-scorecard.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/review-notes.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/approved-outputs.md
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/memory-updates.md
 ```
 
 If the user is running their own system and no business name is given, use:
 
 ```text
-workspace/your-business/{workflow-slug}/
+01-workspace/your-business/{workflow-slug}/
 ```
 
 The Playbook defines how outputs and feedback should work.

@@ -15,7 +15,7 @@ Map -> Build -> Run
 Each workflow should become one Work System Package:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/
+01-workspace/{business-slug}/{workflow-slug}/
 |--- 01-work-map.md
 |--- 02-system-blueprint.md
 |--- 03-workflow-playbook.md
@@ -74,23 +74,43 @@ live-system-records/memory-updates.md records what changed and why.
 Official Shipyard method skills:
 
 ```text
-skills/shipyard-skills/
+02-skills/shipyard-skills/
 ```
 
 Reusable skills created by the user:
 
 ```text
-skills/user-created/
+02-skills/user-created/
 ```
 
 Platform adapter notes:
 
 ```text
-adapters/
+04-adapters/
 ```
 
 Global tool and data connections:
 
 ```text
-connectors/connected-tools.md
+03-connectors/connected-tools.md
 ```
+
+## Business-Level Agent Briefs
+
+Each business can have its own living agent brief:
+
+```text
+01-workspace/{business-slug}/AGENTS.md
+```
+
+Use it for business-wide context:
+
+- who the business is
+- what matters now
+- how the operator likes to work
+- voice and communication preferences
+- global memory and decisions
+- active Work Systems
+- connected tools
+
+Do not put workflow-specific operating instructions here. Put those inside the relevant Work System Package.

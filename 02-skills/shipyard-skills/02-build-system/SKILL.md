@@ -14,7 +14,7 @@ Purpose:
 Output:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
+01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
 ```
 
 ## When To Use
@@ -33,10 +33,11 @@ Use when the user says things like:
 
 Read available context from:
 
-- `workspace/{business-slug}/{workflow-slug}/01-work-map.md`
-- `workspace/_template-work-system/02-system-blueprint.md`
-- `workspace/HOW-IT-WORKS.md`
-- `connectors/connected-tools.md`
+- `01-workspace/{business-slug}/{workflow-slug}/01-work-map.md`
+- `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/_template-work-system/02-system-blueprint.md`
+- `01-workspace/HOW-IT-WORKS.md`
+- `03-connectors/connected-tools.md`
 - any relevant files already inside the package folder
 
 If no Work Map exists, run `01-map-workflow` first or ask for the workflow diagnosis.
@@ -48,25 +49,25 @@ Do not only answer in chat. Read the Work Map, interview for missing details, an
 Read:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/01-work-map.md
+01-workspace/{business-slug}/{workflow-slug}/01-work-map.md
 ```
 
 Write:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
+01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md
 ```
 
 Make sure this folder exists:
 
 ```text
-workspace/{business-slug}/{workflow-slug}/live-system-records/
+01-workspace/{business-slug}/{workflow-slug}/live-system-records/
 ```
 
 If the user is building their own system and no business name is given, use:
 
 ```text
-workspace/your-business/{workflow-slug}/
+01-workspace/your-business/{workflow-slug}/
 ```
 
 After writing, tell the user the file path.
@@ -120,7 +121,7 @@ Examples:
 If a skill should be reusable across multiple Work Systems, note that it should be created under:
 
 ```text
-skills/user-created/
+02-skills/user-created/
 ```
 
 ### Interface

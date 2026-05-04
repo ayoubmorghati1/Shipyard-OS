@@ -84,7 +84,7 @@ Connected tools used:
 Live links recorded in:
 ```
 
-Use `connectors/connected-tools.md` to check what tools are available.
+Use `03-connectors/connected-tools.md` to check what tools are available.
 
 ## 5. Control
 

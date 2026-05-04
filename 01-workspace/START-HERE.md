@@ -5,9 +5,10 @@ This workspace is where you build your AI-assisted Work Systems.
 Do this first:
 
 1. Fill `00-intake.md`.
-2. Pick one repeated workflow that matters.
-3. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
-4. Run the three Shipyard skills in order:
+2. Fill `your-business/AGENTS.md` with the business-level agent brief.
+3. Pick one repeated workflow that matters.
+4. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
+5. Run the three Shipyard skills in order:
 
 ```text
 01-map-workflow
@@ -18,7 +19,13 @@ Do this first:
 Your finished package will live here:
 
 ```text
-workspace/your-business/{workflow-slug}/
+01-workspace/your-business/{workflow-slug}/
+```
+
+Your business-level agent brief lives here:
+
+```text
+01-workspace/your-business/AGENTS.md
 ```
 
 ## What The Agent Should Produce
