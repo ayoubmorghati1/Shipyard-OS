@@ -1,190 +1,129 @@
 # Shipyard-OS
 
-Shipyard-OS is a starter kit for building AI-assisted Work Systems.
+Shipyard-OS is a cloneable workspace for building AI-assisted Work Systems.
 
-It is designed for Shipyard's own business operations, workshops, and client delivery. It is platform-agnostic: the live interface can be Claude, ChatGPT, Gemini, Copilot, ClickUp, Notion, Google Drive, Slack, a CRM, Zapier, Make, n8n, Codex, or a custom app.
+It helps a business owner or team turn one repeated workflow into a practical AI operating layer: mapped, built, run, reviewed, and improved.
 
-The core belief:
+It is platform-agnostic. The live system can run through Claude, ChatGPT, Gemini, Copilot, Codex, ClickUp, Google Drive, Slack, a CRM, Make, Zapier, n8n, or a custom app. The repo is the planning and operating structure around the work.
 
-> AI becomes valuable when it improves real work.
+## Start Here
 
-The unit of value is the workflow.
+Open:
 
----
+```text
+workspace/START-HERE.md
+```
 
-## The Method
+Then use:
+
+```text
+workspace/00-intake.md
+workspace/_template-work-system/
+skills/shipyard-skills/
+```
+
+## The Simple Model
 
 ```text
 Map -> Build -> Run
 ```
 
-| Phase | Purpose | Core output |
+| Phase | What happens | Main file created |
 | --- | --- | --- |
-| Map | Diagnose the workflow and opportunity | Work Map |
-| Build | Define the AI-assisted Work System | System Blueprint |
-| Run | Install, operate, review, and improve | Workflow Playbook + Feedback Scorecard |
-
----
-
-## The Six-Part Work System
-
-Every Work System has six parts:
-
-```text
-Workflow
-Context
-Skills
-Interface
-Control
-Feedback
-```
-
-Memory lives inside Context and Feedback:
-
-```text
-Context contains the Memory Base.
-Feedback updates the Memory Base.
-```
-
----
-
-## What Ships In This Kit
-
-```text
-Shipyard-OS/
-├── README.md
-├── SHIPYARD.md
-├── shipyard-intake.md
-├── connections.md
-├── framework/
-├── templates/
-├── work-systems/
-├── clients/
-├── decisions/
-├── examples/
-├── records/
-├── references/
-└── .claude/skills/
-    ├── 01-map-workflow/
-    ├── 02-build-system/
-    └── 03-run-review/
-```
-
-Core skills:
-
-```text
-01 /map-workflow
-02 /build-system
-03 /run-review
-```
-
-These skills follow the method:
-
-```text
-01 /map-workflow -> Work Map
-02 /build-system -> System Blueprint
-03 /run-review   -> Workflow Playbook + Feedback Scorecard
-```
-
----
-
-## Quick Start
-
-1. Fill `shipyard-intake.md`.
-2. Run `/map-workflow` for one repeated workflow.
-3. Run `/build-system` to define the six-part Work System.
-4. Run `/run-review` to create the operating playbook and review rhythm.
-5. Assemble the Work System Package using `templates/work-system-package.md`.
-
----
-
-## Agentic File Workflow
-
-The skills are designed to be Level 2 agentic workflows.
-
-That means the agent should:
-
-1. Interview the user when information is missing.
-2. Read the relevant framework/templates.
-3. Produce the right deliverable.
-4. Save or update the deliverable in the correct package folder.
-
-Standard package path:
-
-```text
-clients/{client-slug}/{workflow-slug}/
-```
-
-Each skill writes its own phase file into that package folder.
-
-The full package eventually looks like this after the method has run:
-
-```text
-clients/acme-agency/discovery-call-to-proposal/
-├── 01-work-map.md
-├── 02-system-blueprint.md
-├── 03-workflow-playbook.md
-└── live-system-records/
-    ├── feedback-scorecard.md
-    └── review-notes.md
-```
-
-Skill behavior:
-
-```text
-/map-workflow
--> interviews, scores, creates/updates:
-   clients/{client-slug}/{workflow-slug}/01-work-map.md
-
-/build-system
--> reads 01-work-map.md, creates/updates:
-   clients/{client-slug}/{workflow-slug}/02-system-blueprint.md
-
-/run-review
--> reads prior files, creates/updates:
-   clients/{client-slug}/{workflow-slug}/03-workflow-playbook.md
-   clients/{client-slug}/{workflow-slug}/live-system-records/feedback-scorecard.md
-   clients/{client-slug}/{workflow-slug}/live-system-records/review-notes.md
-```
-
-For Shipyard's own internal workflows, use:
-
-```text
-clients/shipyard/{workflow-slug}/
-```
-
----
+| Map | Diagnose the workflow and choose what to improve first | `01-work-map.md` |
+| Build | Design the AI-assisted Work System | `02-system-blueprint.md` |
+| Run | Operate, review, and improve the workflow | `03-workflow-playbook.md` + records |
 
 ## The Work System Package
 
-The final handoff container is:
+Every workflow gets one package:
 
 ```text
-Work System Package
-1. Work Map
-2. System Blueprint
-3. Workflow Playbook
-4. Live System & Records
+workspace/{business-slug}/{workflow-slug}/
+|--- 01-work-map.md
+|--- 02-system-blueprint.md
+|--- 03-workflow-playbook.md
+`--- live-system-records/
+    |--- live-interface.md
+    |--- feedback-scorecard.md
+    |--- review-notes.md
+    |--- approved-outputs.md
+    `--- memory-updates.md
 ```
 
 Clean rule:
 
 ```text
-Blueprint defines the system.
-Playbook explains how to run it.
-Live System & Records stores what actually happens.
+Work Map = why this workflow matters
+System Blueprint = what system should exist
+Workflow Playbook = how to run it
+Live System Records = what actually happened
 ```
 
----
+## Repository Map
+
+```text
+Shipyard-OS/
+|--- README.md
+|--- AGENTS.md
+|--- workspace/
+|   |--- START-HERE.md
+|   |--- 00-intake.md
+|   |--- HOW-IT-WORKS.md
+|   |--- WORK-SYSTEM-PACKAGE.md
+|   |--- _template-work-system/
+|   |--- _example-work-system/
+|   `--- your-business/
+|--- skills/
+|   |--- shipyard-skills/
+|   |--- skill-creator/
+|   `--- user-created/
+|--- connectors/
+|--- adapters/
+`--- .gitignore
+```
+
+## Where Outputs Go
+
+Everything the agent builds for a business goes under:
+
+```text
+workspace/{business-slug}/{workflow-slug}/
+```
+
+The connector apps may hold the live work, for example a Google Doc, ClickUp list, CRM record, Slack workflow, or Claude Project. The repo still records where those things live in:
+
+```text
+live-system-records/live-interface.md
+```
+
+## The Skills
+
+Official Shipyard skills live here:
+
+```text
+skills/shipyard-skills/
+|--- 01-map-workflow/
+|--- 02-build-system/
+`--- 03-run-review/
+```
+
+User-created reusable skills live here:
+
+```text
+skills/user-created/
+```
+
+Use `skills/skill-creator/` when you want the agent to turn a repeated task into a reusable skill.
 
 ## Completion Standard
 
 A Work System is complete when:
 
-- The workflow is clear from trigger to outcome.
-- The AI has the right context and memory base.
-- The required Skills are defined as reusable AI SOPs.
-- The interface fits the team's existing work habits.
-- Human control, review, and ownership are explicit.
-- Feedback improves context, skills, rules, and examples over time.
-- The team can run the workflow without Shipyard in the room.
+- the workflow is clear from trigger to output
+- the AI has the context and memory it needs
+- the skills are reusable AI SOPs
+- the interface fits the team's existing work habits
+- human review and ownership are explicit
+- feedback updates the system over time
+- a new team member can run it without Shipyard in the room
