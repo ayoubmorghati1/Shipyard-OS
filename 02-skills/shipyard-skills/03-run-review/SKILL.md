@@ -36,6 +36,8 @@ Read available context from:
 - `01-workspace/{business-slug}/{workflow-slug}/01-work-map.md`
 - `01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/{business-slug}/business-context/` if it exists
+- `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/03-workflow-playbook.md`
 - existing files under `live-system-records/`
 - relevant live outputs or feedback records
@@ -82,6 +84,18 @@ The `live-system-records/` folder stores what actually happened:
 - review notes
 - approved memory updates
 - important decisions or changes
+
+If a review produces a business-wide decision, propose logging it in:
+
+```text
+01-workspace/{business-slug}/decisions/decision-log.md
+```
+
+If a review produces a business-wide memory update, propose updating:
+
+```text
+01-workspace/{business-slug}/business-context/memory-base.md
+```
 
 After writing, tell the user the file paths.
 

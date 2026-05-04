@@ -35,6 +35,9 @@ Read available context from:
 
 - `01-workspace/{business-slug}/{workflow-slug}/01-work-map.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/{business-slug}/business-context/` if it exists
+- `01-workspace/{business-slug}/brand-assets/` index or relevant source material if needed
+- `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/02-system-blueprint.md`
 - `01-workspace/HOW-IT-WORKS.md`
 - `03-connectors/connected-tools.md`
@@ -95,7 +98,7 @@ What does the AI need to know?
 
 Include the Memory Base:
 
-- stable company facts
+- stable company facts from `business-context/`
 - offers
 - audience
 - tone
@@ -104,6 +107,14 @@ Include the Memory Base:
 - source docs
 - repeated preferences
 - approved decisions
+
+Business-wide memory should live in:
+
+```text
+01-workspace/{business-slug}/business-context/memory-base.md
+```
+
+Workflow-specific memory should stay inside this workflow's `02-system-blueprint.md`.
 
 ### Skills
 

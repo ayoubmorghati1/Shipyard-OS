@@ -36,6 +36,12 @@ Words or phrases to avoid:
 
 ## Knowledge Base
 
+Primary context folder:
+
+```text
+01-workspace/your-business/business-context/
+```
+
 Stable facts:
 
 Important offers:
@@ -47,6 +53,12 @@ Positioning:
 Useful source files:
 
 ## Global Memory
+
+Primary memory file:
+
+```text
+01-workspace/your-business/business-context/memory-base.md
+```
 
 Approved decisions:
 
@@ -72,6 +84,26 @@ Tools this business actually uses:
 | --- | --- | --- |
 |  |  |  |
 
+## Brand Assets
+
+Raw source material lives here:
+
+```text
+01-workspace/your-business/brand-assets/
+```
+
+Use it as reference material. Do not treat it as approved memory until it is summarized or approved into `business-context/`.
+
+## Decisions
+
+Business-wide decisions live here:
+
+```text
+01-workspace/your-business/decisions/decision-log.md
+```
+
+When I make a meaningful business-wide decision, suggest logging it.
+
 ## How The Agent Should Work With Me
 
 - Be direct and practical.
@@ -80,6 +112,7 @@ Tools this business actually uses:
 - When a reusable process appears, suggest creating a skill in `02-skills/user-created/`.
 - When feedback reveals a stable learning, propose a memory update.
 - Do not update memory, context, skills, or control rules without approval.
+- Keep workflow-specific evidence inside that workflow's `live-system-records/`.
 
 ## Update Log
 

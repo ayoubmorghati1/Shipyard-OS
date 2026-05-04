@@ -6,9 +6,11 @@ Do this first:
 
 1. Fill `00-intake.md`.
 2. Fill `your-business/AGENTS.md` with the business-level agent brief.
-3. Pick one repeated workflow that matters.
-4. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
-5. Run the three Shipyard skills in order:
+3. Fill or let the agent draft `your-business/business-context/` from the intake.
+4. Add any useful source material to `your-business/brand-assets/`.
+5. Pick one repeated workflow that matters.
+6. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
+7. Run the three Shipyard skills in order:
 
 ```text
 01-map-workflow
@@ -26,6 +28,18 @@ Your business-level agent brief lives here:
 
 ```text
 01-workspace/your-business/AGENTS.md
+```
+
+Your business-wide context lives here:
+
+```text
+01-workspace/your-business/business-context/
+```
+
+Business-wide decisions live here:
+
+```text
+01-workspace/your-business/decisions/decision-log.md
 ```
 
 ## What The Agent Should Produce
@@ -49,3 +63,12 @@ live-system-records/live-interface.md
 ```
 
 The repo stays the operating structure. The live apps do the live work.
+
+## Clean Difference
+
+```text
+business-context = what the business is
+brand-assets = raw source material
+decisions = what the business decided
+live-system-records = what happened inside one workflow
+```

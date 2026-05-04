@@ -71,13 +71,40 @@ How usage teaches the system what to improve.
 Memory is simple:
 
 ```text
-The Memory Base lives in the System Blueprint.
+Business-wide memory lives in your-business/business-context/memory-base.md.
+Workflow-specific memory lives in that workflow's System Blueprint.
 Feedback proposes updates.
 The owner approves updates.
 live-system-records/memory-updates.md records the history.
 ```
 
 So feedback is the process. Memory is the stored learning.
+
+## Business Context
+
+Business context sits above all Work Systems:
+
+```text
+01-workspace/your-business/business-context/
+```
+
+Use it for stable company context, voice, offers, audience, and business-level memory.
+
+Each Work System can still have workflow-specific context inside its `02-system-blueprint.md`.
+
+## Decisions
+
+Business-wide decisions live here:
+
+```text
+01-workspace/your-business/decisions/decision-log.md
+```
+
+Workflow-specific review evidence stays in:
+
+```text
+01-workspace/your-business/{workflow-slug}/live-system-records/
+```
 
 ## Connectors
 

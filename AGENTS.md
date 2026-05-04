@@ -114,3 +114,13 @@ Use it for business-wide context:
 - connected tools
 
 Do not put workflow-specific operating instructions here. Put those inside the relevant Work System Package.
+
+Business-level support folders:
+
+```text
+01-workspace/{business-slug}/business-context/
+01-workspace/{business-slug}/brand-assets/
+01-workspace/{business-slug}/decisions/
+```
+
+Use `business-context/` for interpreted context, `brand-assets/` for raw source material, and `decisions/` for business-wide decisions. Use workflow-level `live-system-records/` for what happened inside one Work System.

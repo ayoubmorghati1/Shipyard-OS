@@ -34,12 +34,16 @@ Read available context from:
 
 - `01-workspace/00-intake.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
+- `01-workspace/{business-slug}/business-context/` if it exists
+- `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/01-work-map.md`
 - `01-workspace/HOW-IT-WORKS.md`
 - existing packages under `01-workspace/`
 - `03-connectors/connected-tools.md` when tools matter
 
 If context is missing, interview the user. Ask only the minimum questions needed to create a useful Work Map.
+
+If the intake contains stable business context that is missing from `business-context/`, propose updating the relevant business-context files before or alongside the Work Map.
 
 ## Level 2 File Behavior
 

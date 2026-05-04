@@ -74,6 +74,11 @@ Shipyard-OS/
 |   |--- _template-work-system/
 |   |--- _example-work-system/
 |   `--- your-business/
+|       |--- AGENTS.md
+|       |--- business-context/
+|       |--- brand-assets/
+|       |--- decisions/
+|       `--- {workflow-slug}/
 |--- 02-skills/
 |   |--- shipyard-skills/
 |   |--- skill-creator/
@@ -95,6 +100,14 @@ The living business-level agent brief goes one level above the workflows:
 
 ```text
 01-workspace/{business-slug}/AGENTS.md
+```
+
+Business-wide context, assets, and decisions live beside it:
+
+```text
+01-workspace/{business-slug}/business-context/
+01-workspace/{business-slug}/brand-assets/
+01-workspace/{business-slug}/decisions/
 ```
 
 The connector apps may hold the live work, for example a Google Doc, ClickUp list, CRM record, Slack workflow, or Claude Project. The repo still records where those things live in:
