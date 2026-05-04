@@ -11,9 +11,8 @@ clients/{client-name}/{work-system-name}/
 Core package:
 
 ```text
-1. Work Map
-2. System Blueprint
-3. Workflow Playbook
-4. Live System & Records
+01-work-map.md
+02-system-blueprint.md
+03-workflow-playbook.md
+live-system-records/
 ```
-

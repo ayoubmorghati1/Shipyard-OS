@@ -65,22 +65,25 @@ Shipyard-OS/
 ├── records/
 ├── references/
 └── .claude/skills/
+    ├── 01-map-workflow/
+    ├── 02-build-system/
+    └── 03-run-review/
 ```
 
 Core skills:
 
 ```text
-/map-workflow
-/build-system
-/run-review
+01 /map-workflow
+02 /build-system
+03 /run-review
 ```
 
 These skills follow the method:
 
 ```text
-/map-workflow -> Work Map
-/build-system -> System Blueprint
-/run-review   -> Workflow Playbook + Feedback Scorecard
+01 /map-workflow -> Work Map
+02 /build-system -> System Blueprint
+03 /run-review   -> Workflow Playbook + Feedback Scorecard
 ```
 
 ---
@@ -128,4 +131,3 @@ A Work System is complete when:
 - Human control, review, and ownership are explicit.
 - Feedback improves context, skills, rules, and examples over time.
 - The team can run the workflow without Shipyard in the room.
-
