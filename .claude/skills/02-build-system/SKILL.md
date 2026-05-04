@@ -47,6 +47,53 @@ If no Work Map exists, run `/map-workflow` first or ask for the workflow diagnos
 
 ---
 
+## Level 2 File Behavior
+
+This skill should not only answer in chat. It should create or update the Work System Package files whenever filesystem access is available.
+
+Use this standard path:
+
+```text
+clients/{client-slug}/{workflow-slug}/02-system-blueprint.md
+```
+
+Read the Work Map from:
+
+```text
+clients/{client-slug}/{workflow-slug}/01-work-map.md
+```
+
+If the user is building Shipyard's own system, use:
+
+```text
+clients/shipyard/{workflow-slug}/02-system-blueprint.md
+```
+
+If the package folder does not exist, create it and ask for or reconstruct the Work Map first.
+
+The System Blueprint should define:
+
+```text
+Workflow
+Context
+Skills
+Interface
+Control
+Feedback
+```
+
+If Context Pack, Skill Cards, or Control Rules become too large for the Blueprint, create optional supporting files under:
+
+```text
+clients/{client-slug}/{workflow-slug}/supporting-assets/
+```
+
+Do not create supporting files by default. Keep the first package simple unless complexity justifies splitting.
+
+After writing, tell the user the file path.
+
+---
+
 ## Build The Six Parts
 
 Define:
@@ -188,4 +235,3 @@ A good System Blueprint:
 - chooses the interface based on existing work habits
 - names human review points clearly
 - includes a feedback loop
-

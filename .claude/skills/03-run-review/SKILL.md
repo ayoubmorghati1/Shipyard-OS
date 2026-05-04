@@ -49,6 +49,49 @@ If no System Blueprint exists, run `/build-system` first.
 
 ---
 
+## Level 2 File Behavior
+
+This skill should not only answer in chat. It should create or update the Work System Package files whenever filesystem access is available.
+
+Use these standard paths:
+
+```text
+clients/{client-slug}/{workflow-slug}/03-workflow-playbook.md
+clients/{client-slug}/{workflow-slug}/live-system-records/feedback-scorecard.md
+clients/{client-slug}/{workflow-slug}/live-system-records/review-notes.md
+```
+
+Read prior package files from:
+
+```text
+clients/{client-slug}/{workflow-slug}/01-work-map.md
+clients/{client-slug}/{workflow-slug}/02-system-blueprint.md
+```
+
+If the user is running Shipyard's own system, use:
+
+```text
+clients/shipyard/{workflow-slug}/
+```
+
+The Playbook defines how outputs and feedback should work.
+
+The `live-system-records/` folder stores what actually happened:
+
+- live interface links
+- approved examples
+- final outputs
+- feedback scorecard
+- review notes
+- approved memory updates
+- important decisions or changes
+
+If the package folder does not exist, ask whether to create it or run `/map-workflow` first.
+
+After writing, tell the user the file paths.
+
+---
+
 ## Create The Workflow Playbook
 
 Define:
@@ -188,4 +231,3 @@ A good Run phase:
 - turns learnings into approved updates
 - schedules the next review
 - leaves the team able to run the system without Shipyard in the room
-

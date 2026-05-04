@@ -45,6 +45,42 @@ If context is missing, ask only the minimum questions needed to create a useful 
 
 ---
 
+## Level 2 File Behavior
+
+This skill should not only answer in chat. It should create or update the Work System Package files whenever filesystem access is available.
+
+Use this standard path:
+
+```text
+clients/{client-slug}/{workflow-slug}/01-work-map.md
+```
+
+If the user is mapping Shipyard's own business, use:
+
+```text
+clients/shipyard/{workflow-slug}/01-work-map.md
+```
+
+If the client or workflow name is missing, ask for it.
+
+Slug rules:
+
+- lowercase
+- use hyphens instead of spaces
+- remove punctuation
+- keep it short and readable
+
+Before writing the Work Map:
+
+1. Create `clients/{client-slug}/{workflow-slug}/` if it does not exist.
+2. Create `live-system-records/` inside the package folder if it does not exist.
+3. Save the Work Map to `01-work-map.md`.
+4. If the file already exists, update it rather than creating a duplicate.
+
+After writing, tell the user the file path.
+
+---
+
 ## Interview
 
 Ask these, one at a time if needed:
@@ -142,4 +178,3 @@ A good Work Map is:
 - specific enough to build from
 - honest about risk
 - focused on one first workflow
-

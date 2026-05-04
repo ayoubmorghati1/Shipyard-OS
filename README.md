@@ -98,6 +98,56 @@ These skills follow the method:
 
 ---
 
+## Agentic File Workflow
+
+The skills are designed to be Level 2 agentic workflows.
+
+That means the agent should:
+
+1. Interview the user when information is missing.
+2. Read the relevant framework/templates.
+3. Produce the right deliverable.
+4. Save or update the deliverable in the correct package folder.
+
+Standard package path:
+
+```text
+clients/{client-slug}/{workflow-slug}/
+```
+
+Example:
+
+```text
+clients/acme-agency/discovery-call-to-proposal/
+├── 01-work-map.md
+├── 02-system-blueprint.md
+├── 03-workflow-playbook.md
+└── live-system-records/
+    ├── feedback-scorecard.md
+    └── review-notes.md
+```
+
+Skill behavior:
+
+```text
+/map-workflow
+-> interviews, scores, creates/updates 01-work-map.md
+
+/build-system
+-> reads 01-work-map.md, creates/updates 02-system-blueprint.md
+
+/run-review
+-> reads prior files, creates/updates 03-workflow-playbook.md and live-system-records/
+```
+
+For Shipyard's own internal workflows, use:
+
+```text
+clients/shipyard/{workflow-slug}/
+```
+
+---
+
 ## The Work System Package
 
 The final handoff container is:
