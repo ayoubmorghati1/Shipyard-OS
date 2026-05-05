@@ -36,6 +36,14 @@ Your business-wide context lives here:
 01-workspace/your-business/business-context/
 ```
 
+The key business-context files are:
+
+```text
+index.md
+source-log.md
+open-questions.md
+```
+
 Business-wide decisions live here:
 
 ```text
@@ -71,4 +79,14 @@ business-context = what the business is
 brand-assets = raw source material
 decisions = what the business decided
 live-system-records = what happened inside one workflow
+```
+
+## Skill Systems
+
+The Work System Package is also the skill system.
+
+```text
+02-system-blueprint.md = which skills are needed
+03-workflow-playbook.md = how the skills chain together
+02-skills/user-created/ = reusable skill library
 ```

@@ -46,6 +46,22 @@ What the AI does.
 
 Which reusable skills are used in this workflow?
 
+## Skill Chain
+
+How do skill outputs hand off into the next skill?
+
+| Step | Skill | Input | Output | Next step | Human checkpoint |
+| --- | --- | --- | --- | --- | --- |
+| 1 |  |  |  |  |  |
+
+Rules:
+
+```text
+Each skill gets only the context it needs.
+Each output should be clean enough to feed the next step.
+Human checkpoints should happen before risky or irreversible actions.
+```
+
 ## Human Role
 
 What the human does.

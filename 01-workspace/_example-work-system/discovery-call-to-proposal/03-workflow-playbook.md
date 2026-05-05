@@ -46,6 +46,14 @@ Analyze the call, structure the opportunity, draft the proposal, and draft the f
 - Proposal Drafting
 - Follow-Up Drafting
 
+## Skill Chain
+
+| Step | Skill | Input | Output | Next step | Human checkpoint |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Sales Call Analysis | Transcript or notes | Call brief | Proposal Drafting | Confirm facts and missing details |
+| 2 | Proposal Drafting | Call brief, offer document, pricing notes | Proposal draft | Follow-Up Drafting | Confirm scope, price, claims |
+| 3 | Follow-Up Drafting | Proposal draft and call brief | Email draft | Human review and send | Confirm tone and CTA |
+
 ## Human Role
 
 Review facts, commercial logic, scope, pricing, client promises, and final tone.

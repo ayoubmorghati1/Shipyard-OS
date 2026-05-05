@@ -42,6 +42,12 @@ Primary context folder:
 01-workspace/your-business/business-context/
 ```
 
+Read the context index first:
+
+```text
+01-workspace/your-business/business-context/index.md
+```
+
 Stable facts:
 
 Important offers:
@@ -94,6 +100,18 @@ Raw source material lives here:
 
 Use it as reference material. Do not treat it as approved memory until it is summarized or approved into `business-context/`.
 
+When source material is integrated, update:
+
+```text
+01-workspace/your-business/business-context/source-log.md
+```
+
+When context is missing or contradictory, update:
+
+```text
+01-workspace/your-business/business-context/open-questions.md
+```
+
 ## Decisions
 
 Business-wide decisions live here:
@@ -113,6 +131,7 @@ When I make a meaningful business-wide decision, suggest logging it.
 - When feedback reveals a stable learning, propose a memory update.
 - Do not update memory, context, skills, or control rules without approval.
 - Keep workflow-specific evidence inside that workflow's `live-system-records/`.
+- When a workflow uses multiple skills, document the Skill Chain in its `03-workflow-playbook.md`.
 
 ## Update Log
 

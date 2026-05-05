@@ -67,6 +67,22 @@ Review points: pricing, promises, scope, legal language
 Reusable across other Work Systems? yes
 ```
 
+### Skill System
+
+```text
+Orchestrator: Discovery Call To Proposal Playbook
+Skills in chain: Sales Call Analysis -> Proposal Drafting -> Follow-Up Drafting
+Reusable skills: Sales Call Analysis, Proposal Drafting, Follow-Up Drafting
+Workflow-specific skills: none for v1
+Skills to create: Follow-Up Drafting if it does not already exist
+```
+
+| Step | Skill | Input | Output | Hands off to | Human checkpoint |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Sales Call Analysis | Transcript or notes | Call brief | Proposal Drafting | Check facts, needs, objections |
+| 2 | Proposal Drafting | Call brief, offer doc, pricing notes | Proposal draft | Follow-Up Drafting | Check scope, price, promises |
+| 3 | Follow-Up Drafting | Proposal draft and call brief | Follow-up email draft | Human send | Check tone and CTA |
+
 ## 4. Interface
 
 ```text

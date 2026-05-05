@@ -124,3 +124,27 @@ Business-level support folders:
 ```
 
 Use `business-context/` for interpreted context, `brand-assets/` for raw source material, and `decisions/` for business-wide decisions. Use workflow-level `live-system-records/` for what happened inside one Work System.
+
+Maintain business context like a small wiki:
+
+```text
+business-context/index.md = navigation and page map
+business-context/source-log.md = source integration history
+business-context/open-questions.md = unresolved context gaps
+```
+
+When source material changes the business context, update the relevant page, source log, and index. If something is unclear, add it to open questions.
+
+## Skill Systems
+
+Skills are reusable components. A Work System Package can orchestrate multiple skills into one end-to-end business workflow.
+
+Use this rule:
+
+```text
+02-skills/user-created/ = reusable skill library
+02-system-blueprint.md = skills selected or needed
+03-workflow-playbook.md = skill chain and handoffs
+```
+
+Avoid mega skills. Avoid isolated skills that leave the human manually copying output from one step into the next. Prefer focused reusable skills wired together by the Workflow Playbook.

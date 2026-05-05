@@ -29,3 +29,5 @@ Things the agent should understand about the business.
 ## Source Notes
 
 Where this information came from.
+
+Update `source-log.md` when new source material changes this page.

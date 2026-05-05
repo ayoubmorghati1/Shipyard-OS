@@ -110,6 +110,14 @@ Business-wide context, assets, and decisions live beside it:
 01-workspace/{business-slug}/decisions/
 ```
 
+`business-context/` is a maintained business wiki. The important navigation files are:
+
+```text
+index.md
+source-log.md
+open-questions.md
+```
+
 The connector apps may hold the live work, for example a Google Doc, ClickUp list, CRM record, Slack workflow, or Claude Project. The repo still records where those things live in:
 
 ```text
@@ -134,6 +142,20 @@ User-created reusable skills live here:
 ```
 
 Use `02-skills/skill-creator/` when you want the agent to turn a repeated task into a reusable skill.
+
+## Skill Systems
+
+Do not use skills only as isolated one-off prompts.
+
+In Shipyard-OS:
+
+```text
+Reusable skills live in 02-skills/user-created/
+Skill orchestration lives in the Work System Package
+The Skill Chain is documented in 03-workflow-playbook.md
+```
+
+That means a Work System can chain multiple focused skills into one business workflow.
 
 ## Completion Standard
 

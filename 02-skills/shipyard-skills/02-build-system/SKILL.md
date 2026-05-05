@@ -36,6 +36,8 @@ Read available context from:
 - `01-workspace/{business-slug}/{workflow-slug}/01-work-map.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
 - `01-workspace/{business-slug}/business-context/` if it exists
+- `01-workspace/{business-slug}/business-context/index.md` if it exists
+- `01-workspace/{business-slug}/business-context/open-questions.md` if it exists
 - `01-workspace/{business-slug}/brand-assets/` index or relevant source material if needed
 - `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/02-system-blueprint.md`
@@ -135,6 +137,18 @@ If a skill should be reusable across multiple Work Systems, note that it should 
 02-skills/user-created/
 ```
 
+Also define the Skill System:
+
+- which skill orchestrates or coordinates the workflow
+- which reusable skills are used
+- which workflow-specific skills are needed
+- what each skill takes as input
+- what each skill produces as output
+- how outputs hand off between skills
+- where human checkpoints happen
+
+Do not create one giant skill for the whole workflow if smaller reusable skills can be chained cleanly.
+
 ### Interface
 
 Where does the system live?
@@ -198,6 +212,17 @@ Output:
 Review points:
 Reusable across other Work Systems? yes/no
 
+## 3.1 Skill System
+
+Orchestrator:
+Skills in chain:
+Reusable skills:
+Workflow-specific skills:
+Skills to create:
+
+| Step | Skill | Input | Output | Hands off to | Human checkpoint |
+| --- | --- | --- | --- | --- | --- |
+
 ## 4. Interface
 
 Primary interface:
@@ -235,6 +260,7 @@ A good System Blueprint:
 - maps directly to the Work Map
 - defines all six parts
 - keeps Context, Memory, Skills, Interface, Control, and Feedback in one place
+- defines the Skill System when multiple skills need to chain together
 - does not overbuild
 - chooses the interface based on existing work habits
 - names human review points clearly

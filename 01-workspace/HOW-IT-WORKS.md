@@ -92,6 +92,16 @@ Use it for stable company context, voice, offers, audience, and business-level m
 
 Each Work System can still have workflow-specific context inside its `02-system-blueprint.md`.
 
+Maintain it like a small business wiki:
+
+```text
+index.md = what exists and where to look
+source-log.md = what sources were integrated
+open-questions.md = what still needs answers
+```
+
+Raw files belong in `brand-assets/`. Interpreted knowledge belongs in `business-context/`.
+
 ## Decisions
 
 Business-wide decisions live here:
@@ -132,4 +142,27 @@ If a workflow needs a new reusable skill, use:
 
 ```text
 02-skills/skill-creator/
+```
+
+## Skill Systems
+
+Skills should be modular, but real business workflows need sequences.
+
+In Shipyard:
+
+```text
+Skills = reusable components
+Work System Package = skill system
+Workflow Playbook = orchestration layer
+```
+
+Use `03-workflow-playbook.md` to define the Skill Chain:
+
+```text
+Skill order
+Input to each skill
+Output from each skill
+How outputs hand off
+Human checkpoints
+Final destination
 ```

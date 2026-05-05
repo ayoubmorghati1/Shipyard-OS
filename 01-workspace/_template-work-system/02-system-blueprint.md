@@ -71,6 +71,32 @@ Review points:
 Reusable across other Work Systems? yes/no
 ```
 
+### Skill System
+
+How do the skills connect into one workflow?
+
+```text
+Orchestrator:
+Skills in chain:
+Reusable skills:
+Workflow-specific skills:
+Skills to create:
+```
+
+Skill chain:
+
+| Step | Skill | Input | Output | Hands off to | Human checkpoint |
+| --- | --- | --- | --- | --- | --- |
+| 1 |  |  |  |  |  |
+
+Rule:
+
+```text
+Skills are reusable components.
+The Work System Package is the skill system.
+The Workflow Playbook is the orchestration layer.
+```
+
 ## 4. Interface
 
 Where will the system actually run?
@@ -121,6 +147,7 @@ What will be built first?
 - [ ] Context gathered
 - [ ] Memory Base drafted
 - [ ] Skills defined
+- [ ] Skill chain defined
 - [ ] Interface selected
 - [ ] Controls defined
 - [ ] Feedback process defined

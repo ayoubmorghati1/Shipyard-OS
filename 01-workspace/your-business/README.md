@@ -73,3 +73,15 @@ brand-assets = raw source material
 decisions = business-wide decisions
 {workflow-slug} = one Work System Package
 ```
+
+## Business Context Wiki
+
+Use these files to keep context navigable:
+
+```text
+business-context/index.md
+business-context/source-log.md
+business-context/open-questions.md
+```
+
+The agent should update them when source material is integrated or context gaps appear.
