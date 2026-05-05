@@ -35,8 +35,8 @@ Read available context from:
 - `01-workspace/00-intake.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
 - `01-workspace/{business-slug}/business-context/` if it exists
-- `01-workspace/{business-slug}/business-context/index.md` if it exists
-- `01-workspace/{business-slug}/business-context/open-questions.md` if it exists
+- `01-workspace/{business-slug}/llm-wiki/index.md` if it exists
+- `01-workspace/{business-slug}/llm-wiki/open-questions.md` if it exists
 - `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/01-work-map.md`
 - `01-workspace/HOW-IT-WORKS.md`
@@ -47,7 +47,7 @@ If context is missing, interview the user. Ask only the minimum questions needed
 
 If the intake contains stable business context that is missing from `business-context/`, propose updating the relevant business-context files before or alongside the Work Map.
 
-When you integrate source material or intake answers into business context, update `business-context/source-log.md`. When a gap blocks confident mapping, add it to `business-context/open-questions.md`.
+When you process source material or intake answers, update `llm-wiki/source-log.md`. When a gap blocks confident mapping, add it to `llm-wiki/open-questions.md`. Promote only approved stable learnings into `business-context/`.
 
 ## Level 2 File Behavior
 

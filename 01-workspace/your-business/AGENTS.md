@@ -42,10 +42,12 @@ Primary context folder:
 01-workspace/your-business/business-context/
 ```
 
-Read the context index first:
+For approved context, read `business-context/`.
+
+For source processing history, synthesis, and open questions, read:
 
 ```text
-01-workspace/your-business/business-context/index.md
+01-workspace/your-business/llm-wiki/index.md
 ```
 
 Stable facts:
@@ -103,13 +105,13 @@ Use it as reference material. Do not treat it as approved memory until it is sum
 When source material is integrated, update:
 
 ```text
-01-workspace/your-business/business-context/source-log.md
+01-workspace/your-business/llm-wiki/source-log.md
 ```
 
 When context is missing or contradictory, update:
 
 ```text
-01-workspace/your-business/business-context/open-questions.md
+01-workspace/your-business/llm-wiki/open-questions.md
 ```
 
 ## Decisions

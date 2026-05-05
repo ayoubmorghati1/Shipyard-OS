@@ -80,9 +80,9 @@ live-system-records/memory-updates.md records the history.
 
 So feedback is the process. Memory is the stored learning.
 
-## Business Context
+## Business Context And LLM Wiki
 
-Business context sits above all Work Systems:
+Approved business context sits above all Work Systems:
 
 ```text
 01-workspace/your-business/business-context/
@@ -92,15 +92,23 @@ Use it for stable company context, voice, offers, audience, and business-level m
 
 Each Work System can still have workflow-specific context inside its `02-system-blueprint.md`.
 
-Maintain it like a small business wiki:
+The AI-maintained notebook lives next to it:
+
+```text
+01-workspace/your-business/llm-wiki/
+```
+
+Use the wiki for processing sources, synthesizing notes, and tracking unresolved questions:
 
 ```text
 index.md = what exists and where to look
-source-log.md = what sources were integrated
+source-log.md = what sources were processed
 open-questions.md = what still needs answers
 ```
 
-Raw files belong in `brand-assets/`. Interpreted knowledge belongs in `business-context/`.
+Promote only approved stable learnings from `llm-wiki/` into `business-context/`.
+
+Brand files belong in `brand-assets/`. Workflow evidence belongs in `live-system-records/`.
 
 ## Decisions
 

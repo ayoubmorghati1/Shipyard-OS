@@ -7,10 +7,11 @@ Do this first:
 1. Fill `00-intake.md`.
 2. Fill `your-business/AGENTS.md` with the business-level agent brief.
 3. Fill or let the agent draft `your-business/business-context/` from the intake.
-4. Add any useful source material to `your-business/brand-assets/`.
-5. Pick one repeated workflow that matters.
-6. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
-7. Run the three Shipyard skills in order:
+4. Use `your-business/llm-wiki/` as the AI-maintained notebook for processed sources and open questions.
+5. Add useful brand material to `your-business/brand-assets/`.
+6. Pick one repeated workflow that matters.
+7. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
+8. Run the three Shipyard skills in order:
 
 ```text
 01-map-workflow
@@ -30,13 +31,19 @@ Your business-level agent brief lives here:
 01-workspace/your-business/AGENTS.md
 ```
 
-Your business-wide context lives here:
+Your approved business-wide context lives here:
 
 ```text
 01-workspace/your-business/business-context/
 ```
 
-The key business-context files are:
+Your AI-maintained notebook lives here:
+
+```text
+01-workspace/your-business/llm-wiki/
+```
+
+The key wiki files are:
 
 ```text
 index.md
@@ -75,8 +82,9 @@ The repo stays the operating structure. The live apps do the live work.
 ## Clean Difference
 
 ```text
-business-context = what the business is
-brand-assets = raw source material
+business-context = approved business context
+llm-wiki = AI-maintained notebook and synthesis
+brand-assets = brand assets
 decisions = what the business decided
 live-system-records = what happened inside one workflow
 ```

@@ -119,21 +119,22 @@ Business-level support folders:
 
 ```text
 01-workspace/{business-slug}/business-context/
+01-workspace/{business-slug}/llm-wiki/
 01-workspace/{business-slug}/brand-assets/
 01-workspace/{business-slug}/decisions/
 ```
 
-Use `business-context/` for interpreted context, `brand-assets/` for raw source material, and `decisions/` for business-wide decisions. Use workflow-level `live-system-records/` for what happened inside one Work System.
+Use `business-context/` for approved business context, `llm-wiki/` for the AI-maintained notebook, `brand-assets/` for brand assets, and `decisions/` for business-wide decisions. Use workflow-level `live-system-records/` for what happened inside one Work System.
 
-Maintain business context like a small wiki:
+Maintain the LLM wiki like a small notebook:
 
 ```text
-business-context/index.md = navigation and page map
-business-context/source-log.md = source integration history
-business-context/open-questions.md = unresolved context gaps
+llm-wiki/index.md = navigation and page map
+llm-wiki/source-log.md = source processing history
+llm-wiki/open-questions.md = unresolved context gaps
 ```
 
-When source material changes the business context, update the relevant page, source log, and index. If something is unclear, add it to open questions.
+When source material appears, process it into `llm-wiki/` first. Promote only approved stable learnings into `business-context/`. If something is unclear, add it to open questions.
 
 ## Skill Systems
 

@@ -76,6 +76,7 @@ Shipyard-OS/
 |   `--- your-business/
 |       |--- AGENTS.md
 |       |--- business-context/
+|       |--- llm-wiki/
 |       |--- brand-assets/
 |       |--- decisions/
 |       `--- {workflow-slug}/
@@ -102,21 +103,24 @@ The living business-level agent brief goes one level above the workflows:
 01-workspace/{business-slug}/AGENTS.md
 ```
 
-Business-wide context, assets, and decisions live beside it:
+Business-wide context, wiki notes, assets, and decisions live beside it:
 
 ```text
 01-workspace/{business-slug}/business-context/
+01-workspace/{business-slug}/llm-wiki/
 01-workspace/{business-slug}/brand-assets/
 01-workspace/{business-slug}/decisions/
 ```
 
-`business-context/` is a maintained business wiki. The important navigation files are:
+`llm-wiki/` is the AI-maintained notebook. The important navigation files are:
 
 ```text
 index.md
 source-log.md
 open-questions.md
 ```
+
+`business-context/` is the cleaner approved context that Work Systems can rely on.
 
 The connector apps may hold the live work, for example a Google Doc, ClickUp list, CRM record, Slack workflow, or Claude Project. The repo still records where those things live in:
 

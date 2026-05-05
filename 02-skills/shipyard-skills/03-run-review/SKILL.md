@@ -37,8 +37,8 @@ Read available context from:
 - `01-workspace/{business-slug}/{workflow-slug}/02-system-blueprint.md`
 - `01-workspace/{business-slug}/AGENTS.md` if it exists
 - `01-workspace/{business-slug}/business-context/` if it exists
-- `01-workspace/{business-slug}/business-context/index.md` if it exists
-- `01-workspace/{business-slug}/business-context/open-questions.md` if it exists
+- `01-workspace/{business-slug}/llm-wiki/index.md` if it exists
+- `01-workspace/{business-slug}/llm-wiki/open-questions.md` if it exists
 - `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
 - `01-workspace/_template-work-system/03-workflow-playbook.md`
 - existing files under `live-system-records/`
