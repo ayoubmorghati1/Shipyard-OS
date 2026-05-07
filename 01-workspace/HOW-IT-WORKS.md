@@ -71,7 +71,7 @@ How usage teaches the system what to improve.
 Memory is simple:
 
 ```text
-Business-wide memory lives in your-business/business-context/memory-base.md.
+Business-wide memory lives in 01-your-business/business-context/memory-base.md.
 Workflow-specific memory lives in that workflow's System Blueprint.
 Feedback proposes updates.
 The owner approves updates.
@@ -85,7 +85,7 @@ So feedback is the process. Memory is the stored learning.
 Approved business context sits above all Work Systems:
 
 ```text
-01-workspace/your-business/business-context/
+01-workspace/01-your-business/business-context/
 ```
 
 Use it for stable company context, voice, offers, audience, and business-level memory.
@@ -95,7 +95,7 @@ Each Work System can still have workflow-specific context inside its `02-system-
 The AI-maintained notebook lives next to it:
 
 ```text
-01-workspace/your-business/llm-wiki/
+01-workspace/01-your-business/llm-wiki/
 ```
 
 Use the wiki for processing sources, synthesizing notes, and tracking unresolved questions:
@@ -115,13 +115,13 @@ Brand files belong in `brand-assets/`. Workflow evidence belongs in `live-system
 Business-wide decisions live here:
 
 ```text
-01-workspace/your-business/decisions/decision-log.md
+01-workspace/01-your-business/decisions/decision-log.md
 ```
 
 Workflow-specific review evidence stays in:
 
 ```text
-01-workspace/your-business/{workflow-slug}/live-system-records/
+01-workspace/01-your-business/{workflow-slug}/live-system-records/
 ```
 
 ## Connectors

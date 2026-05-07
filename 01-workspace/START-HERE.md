@@ -5,12 +5,12 @@ This workspace is where you build your AI-assisted Work Systems.
 Do this first:
 
 1. Fill `00-intake.md`.
-2. Fill `your-business/AGENTS.md` with the business-level agent brief.
-3. Fill or let the agent draft `your-business/business-context/` from the intake.
-4. Use `your-business/llm-wiki/` as the AI-maintained notebook for processed sources and open questions.
-5. Add useful brand material to `your-business/brand-assets/`.
+2. Fill `01-your-business/AGENTS.md` with the business-level agent brief.
+3. Fill or let the agent draft `01-your-business/business-context/` from the intake.
+4. Use `01-your-business/llm-wiki/` as the AI-maintained notebook for processed sources and open questions.
+5. Add useful brand material to `01-your-business/brand-assets/`.
 6. Pick one repeated workflow that matters.
-7. Copy `_template-work-system/` into `your-business/{workflow-slug}/`.
+7. Copy `02-starter-kit/template-work-system/` into `01-your-business/{workflow-slug}/`.
 8. Run the three Shipyard skills in order:
 
 ```text
@@ -22,25 +22,25 @@ Do this first:
 Your finished package will live here:
 
 ```text
-01-workspace/your-business/{workflow-slug}/
+01-workspace/01-your-business/{workflow-slug}/
 ```
 
 Your business-level agent brief lives here:
 
 ```text
-01-workspace/your-business/AGENTS.md
+01-workspace/01-your-business/AGENTS.md
 ```
 
 Your approved business-wide context lives here:
 
 ```text
-01-workspace/your-business/business-context/
+01-workspace/01-your-business/business-context/
 ```
 
 Your AI-maintained notebook lives here:
 
 ```text
-01-workspace/your-business/llm-wiki/
+01-workspace/01-your-business/llm-wiki/
 ```
 
 The key wiki files are:
@@ -54,7 +54,7 @@ open-questions.md
 Business-wide decisions live here:
 
 ```text
-01-workspace/your-business/decisions/decision-log.md
+01-workspace/01-your-business/decisions/decision-log.md
 ```
 
 ## What The Agent Should Produce

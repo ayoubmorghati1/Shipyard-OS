@@ -19,8 +19,8 @@ The agent should update this when wiki notes, processed sources, or promoted bus
 Source material can live in many places.
 
 ```text
-01-workspace/your-business/brand-assets/
-01-workspace/your-business/{workflow-slug}/live-system-records/
+01-workspace/01-your-business/brand-assets/
+01-workspace/01-your-business/{workflow-slug}/live-system-records/
 external tools such as Drive, ClickUp, CRM, Slack, email, or meeting tools
 ```
 

@@ -26,7 +26,7 @@ Proposed updates should come from feedback, reviews, or explicit operator decisi
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-If a proposed update comes from raw source material, record the source in `../llm-wiki/source-log.md`.
+If a proposed update comes from a processed source, record the source in `../llm-wiki/source-log.md`.
 
 If the update exposes an unresolved context gap, add it to `../llm-wiki/open-questions.md`.
 

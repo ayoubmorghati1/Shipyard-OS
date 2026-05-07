@@ -39,7 +39,7 @@ Words or phrases to avoid:
 Primary context folder:
 
 ```text
-01-workspace/your-business/business-context/
+01-workspace/01-your-business/business-context/
 ```
 
 For approved context, read `business-context/`.
@@ -47,7 +47,7 @@ For approved context, read `business-context/`.
 For source processing history, synthesis, and open questions, read:
 
 ```text
-01-workspace/your-business/llm-wiki/index.md
+01-workspace/01-your-business/llm-wiki/index.md
 ```
 
 Stable facts:
@@ -65,7 +65,7 @@ Useful source files:
 Primary memory file:
 
 ```text
-01-workspace/your-business/business-context/memory-base.md
+01-workspace/01-your-business/business-context/memory-base.md
 ```
 
 Approved decisions:
@@ -97,7 +97,7 @@ Tools this business actually uses:
 Raw source material lives here:
 
 ```text
-01-workspace/your-business/brand-assets/
+01-workspace/01-your-business/brand-assets/
 ```
 
 Use it as reference material. Do not treat it as approved memory until it is summarized or approved into `business-context/`.
@@ -105,13 +105,13 @@ Use it as reference material. Do not treat it as approved memory until it is sum
 When source material is integrated, update:
 
 ```text
-01-workspace/your-business/llm-wiki/source-log.md
+01-workspace/01-your-business/llm-wiki/source-log.md
 ```
 
 When context is missing or contradictory, update:
 
 ```text
-01-workspace/your-business/llm-wiki/open-questions.md
+01-workspace/01-your-business/llm-wiki/open-questions.md
 ```
 
 ## Decisions
@@ -119,7 +119,7 @@ When context is missing or contradictory, update:
 Business-wide decisions live here:
 
 ```text
-01-workspace/your-business/decisions/decision-log.md
+01-workspace/01-your-business/decisions/decision-log.md
 ```
 
 When I make a meaningful business-wide decision, suggest logging it.

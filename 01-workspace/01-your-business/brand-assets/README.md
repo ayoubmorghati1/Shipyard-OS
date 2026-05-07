@@ -1,6 +1,6 @@
 # Brand Assets
 
-Store source material the agent can use as reference.
+Store brand and marketing assets the agent can use as reference.
 
 Examples:
 
@@ -19,8 +19,9 @@ Do not treat this folder as the system memory.
 Use this rule:
 
 ```text
-brand-assets = raw source material
-business-context = interpreted business context
+brand-assets = brand and marketing assets
+business-context = approved business context
+llm-wiki = AI-maintained notebook and synthesis
 AGENTS.md = living agent brief
 Work System Package = one workflow
 ```

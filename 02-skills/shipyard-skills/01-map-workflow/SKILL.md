@@ -38,7 +38,7 @@ Read available context from:
 - `01-workspace/{business-slug}/llm-wiki/index.md` if it exists
 - `01-workspace/{business-slug}/llm-wiki/open-questions.md` if it exists
 - `01-workspace/{business-slug}/decisions/decision-log.md` if it exists
-- `01-workspace/_template-work-system/01-work-map.md`
+- `01-workspace/02-starter-kit/template-work-system/01-work-map.md`
 - `01-workspace/HOW-IT-WORKS.md`
 - existing packages under `01-workspace/`
 - `03-connectors/connected-tools.md` when tools matter
@@ -78,7 +78,7 @@ memory-updates.md
 If the user is mapping their own business and no business name is given, use:
 
 ```text
-01-workspace/your-business/{workflow-slug}/
+01-workspace/01-your-business/{workflow-slug}/
 ```
 
 Slug rules:

@@ -5,7 +5,7 @@ This is where your real Work System Packages go.
 Start by filling:
 
 ```text
-01-workspace/your-business/AGENTS.md
+01-workspace/01-your-business/AGENTS.md
 ```
 
 That file is the business-level living agent brief.
@@ -13,13 +13,13 @@ That file is the business-level living agent brief.
 Then fill or let the agent draft:
 
 ```text
-01-workspace/your-business/business-context/
+01-workspace/01-your-business/business-context/
 ```
 
 Use:
 
 ```text
-01-workspace/your-business/llm-wiki/
+01-workspace/01-your-business/llm-wiki/
 ```
 
 as the AI-maintained notebook for processed sources, synthesis, and open questions.
@@ -27,15 +27,15 @@ as the AI-maintained notebook for processed sources, synthesis, and open questio
 Use:
 
 ```text
-01-workspace/your-business/brand-assets/
+01-workspace/01-your-business/brand-assets/
 ```
 
-for raw source material like decks, logos, case studies, voice samples, and examples.
+for brand and marketing assets like logos, decks, case studies, voice samples, screenshots, website copy, and examples.
 
 Use:
 
 ```text
-01-workspace/your-business/decisions/decision-log.md
+01-workspace/01-your-business/decisions/decision-log.md
 ```
 
 for business-wide decisions.
@@ -43,25 +43,25 @@ for business-wide decisions.
 Copy:
 
 ```text
-01-workspace/_template-work-system/
+01-workspace/02-starter-kit/template-work-system/
 ```
 
 Into:
 
 ```text
-01-workspace/your-business/{workflow-slug}/
+01-workspace/01-your-business/{workflow-slug}/
 ```
 
 Example:
 
 ```text
-01-workspace/your-business/discovery-call-to-proposal/
+01-workspace/01-your-business/discovery-call-to-proposal/
 ```
 
 If you want to organize by business function, use folders like:
 
 ```text
-01-workspace/your-business/
+01-workspace/01-your-business/
 |--- growth/
 |--- delivery/
 |--- knowledge/
